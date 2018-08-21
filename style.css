@@ -64,3 +64,23 @@ body{
 .hamburger{
 	margin-top: 2.5em;
 }
+
+div.head{
+    display: inline-block;
+    margin-top: 5em;
+    padding-left: 40em;
+}
+
+h1.haslo, p.podhaslo{
+    color: #ffffff;
+}
+
+h1.haslo{
+    font-size: 8em;
+    font-weight: 100;
+}
+
+p.podhaslo{
+    font-size: 5em;
+    font-weight: 600;
+}
