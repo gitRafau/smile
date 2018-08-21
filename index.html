@@ -8,17 +8,42 @@
         <link rel="stylesheet" href="style.css">
         <title>Smile</title>
     </head>
-    <body>
-        <main class="container-fluid">
-            <header>
-                <!--logo-->
+    <body>        
+            <header class="container-fluid back">
+                <div class="row justify-content-between">
+                    <div class="col-5">
+                        <a href="index.html">
+                            <img src="images/logo.png" class="logo" alt="Logo, białe litery na czarnym tle">
+                        </a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#">
+                        <img src="images/menu.png" onclick="openNav()" class="hamburger" alt="menu hamburger">
+                      </a>
+                    </div>
+                </div>
             </header>
-            <nav>
-                <!-- button navigacji -->
-            </nav>           
-        </main>
-        
 
+            <nav id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </nav>
+            <section>
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1>Hello, world!</h1>
+                        <p>Contents ...</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+        
         <script src="lib/js/jquery.js"></script>
         <script src="lib/js/bootstrap.min.js"></script>
         <script src="lib/js/slick.min.js"></script>
@@ -26,6 +51,16 @@
 //            $(document).ready(function () {
 //               $('.your-class').slick();
 //            });
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "30em";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+
         </script>
 
     </body>
