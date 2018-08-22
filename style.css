@@ -9,14 +9,35 @@ html{
 body{
 	margin: 0;
     padding: 0;
+    transition: background-color .5s;
 }
 
 .container-fluid{
     margin: 0; 
     padding: 0; 
-
 }
 
+header{
+    z-index: 999;
+    position: absolute;
+}
+
+header > .row{
+    margin-top: 2em;
+}
+
+header div > p{
+    color: #fff;
+    text-transform: uppercase;
+    border-top: 0.2em solid #fff;
+    border-bottom: 0.2em solid #fff;
+    padding: 0.2em;
+    margin-top: 1em;
+    text-align: center;
+    width: 50%;
+    font-family: inherit;
+    font-weight: 600;
+}
 
 .carousel-indicators li {
   width: 10px;
@@ -24,5 +45,56 @@ body{
   margin-left: 1em;
   border-radius: 100%;
   background-color: #000;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
+}
+
+article h1{
+    padding-top: 0.5em;
+    font-size: 4em;
+}
+
+article h1:first-child{
+    padding-top: 0.1em;
+    font-size: 4em;
+    font-weight: 200;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0;
 }
