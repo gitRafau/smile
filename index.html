@@ -8,62 +8,62 @@
         <link rel="stylesheet" href="style.css">
         <title>Smile</title>
     </head>
-    <body>        
-            <header class="container-fluid back">
-                <div class="row justify-content-between">
-                    <div class="col-5">
-                        <a href="index.html">
-                            <img src="images/logo.png" class="logo" alt="Logo, białe litery na czarnym tle">
-                        </a>
+    <body>
+    <div class="container-fluid">
+          <div class="row">
+              <div class="col-12">
+                  <section>
+                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/misio.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/misio.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/misio.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/misio.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/misio.png" alt="Third slide">
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-1">
-                      <a href="#">
-                        <img src="images/menu.png" onclick="openNav()" class="hamburger" alt="menu hamburger">
-                      </a>
-                    </div>
-                </div>
-                <div class="head">
-                    <h1 class="haslo">Smile</h1>
-                    <p class="podhaslo">It coast nothing</p>
-                </div>
-            </header>
+                  </section>
+              </div>
+          </div>
 
-            <nav id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>
-            </nav>
-            
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
-                </div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
+     
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+    </div> 
         <script src="lib/js/jquery.js"></script>
-        <script src="lib/js/bootstrap.min.js"></script>
-        <script src="lib/js/slick.min.js"></script>
+        <script src="lib/js/bootstrap.min.js"></script>   
         <script>
-//            $(document).ready(function () {
-//               $('.your-class').slick();
-//            });
-
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "30em";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-
-
-        </script>
-
+            $('.carousel').carousel({
+              interval: 2000
+            });
+        </script>     
     </body>
 </html>
