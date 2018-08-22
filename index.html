@@ -8,8 +8,29 @@
         <link rel="stylesheet" href="style.css">
         <title>Smile</title>
     </head>
-    <body>
+    <body id="main">
     <div class="container-fluid">
+        <header class="container-fluid">
+            <div class="row">
+              <div class="col-md-3 offset-md-1">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="Logo, białe litery na czarnym tle">
+                </a>
+              </div>
+              <div class="col-md-1 offset-md-5">                
+                  <p onclick="openNav()">Menu</p>                
+              </div>
+            </div>
+        </header>
+        <nav id="mySidenav" class="sidenav">
+            
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+
+        </nav>
           <div class="row">
               <div class="col-12">
                   <section>
@@ -42,6 +63,20 @@
                   </section>
               </div>
           </div>
+          <article>
+              <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                        <h1 class="text-center">The most inclusive</h1>
+                        <h1 class="text-center">Free PSD Template</h1>
+                        <p class="text-center">Free for commercial and personal use. You can easily edit its contents and code it for yourself or your client!</p>
+
+                        <img src="" alt="">
+
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget nisi eget tortor iaculis tristique. Aliquam tincidunt posuere tortor hendrerit elementum. Nunc laoreet lorem a sem auctor fringilla. Pellentesque dignissim accumsan lobortis. Sed pharetra erat vitae dui imperdiet quis commodo orci dapibus. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce at nunc libero. Nam metus lorem, rhoncus ac mattis ornare, blandit vel risus.</p>
+                  </div>
+              </div>
+          </article>
 
      
 
@@ -64,6 +99,19 @@
             $('.carousel').carousel({
               interval: 2000
             });
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
+            }
         </script>     
     </body>
 </html>
