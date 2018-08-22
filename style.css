@@ -11,76 +11,18 @@ body{
     padding: 0;
 }
 
-.back{
-	background-image: url('images/misio.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 60em;	
+.container-fluid{
+    margin: 0; 
+    padding: 0; 
+
 }
 
-.logo{
-	padding: 2em;
-}
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.hamburger{
-	margin-top: 2.5em;
-}
-
-div.head{
-    display: inline-block;
-    margin-top: 5em;
-    padding-left: 40em;
-}
-
-h1.haslo, p.podhaslo{
-    color: #ffffff;
-}
-
-h1.haslo{
-    font-size: 8em;
-    font-weight: 100;
-}
-
-p.podhaslo{
-    font-size: 5em;
-    font-weight: 600;
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin-left: 1em;
+  border-radius: 100%;
+  background-color: #000;
+  margin-bottom: 5em;
 }
